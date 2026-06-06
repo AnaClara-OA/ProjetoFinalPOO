@@ -1,0 +1,30 @@
+Código: 1 | Título: Percy Jackson e o Ladrão de Raios | Autor: Rick Riordan | Quantidade: 10
+Código: 2 | Título: O Fantasma da Ópera | Autor: Gaston Leroux | Quantidade: 7
+Código: 3 | Título: Romeu e Julieta | Autor: William Shakespeare | Quantidade: 12
+Código: 4 | Título: As Crônicas de Nárnia | Autor: C.S. Lewis | Quantidade: 8
+Código: 5 | Título: O Senhor dos Anéis | Autor: J.R.R. Tolkien | Quantidade: 5
+Código: 6 | Título: É Assim que Acaba | Autor: Colleen Hoover | Quantidade: 15
+Código: 7 | Título: Orgulho e Preconceito | Autor: Jane Austen | Quantidade: 9
+Código: 8 | Título: Hamlet | Autor: William Shakespeare | Quantidade: 6
+Código: 9 | Título: Sonho de Uma Noite de Verão | Autor: William Shakespeare | Quantidade: 8
+Código: 10 | Título: A Odisseia | Autor: Homero | Quantidade: 4
+Código: 11 | Título: Assassinato no Expresso do Oriente | Autor: Agatha Christie | Quantidade: 11
+Código: 12 | Título: Noites Brancas | Autor: Fiódor Dostoiévski | Quantidade: 10
+Código: 13 | Título: A Menina que Roubava Livros | Autor: Markus Zusak | Quantidade: 13
+Código: 14 | Título: Triste Fim de Policarpo Quaresma | Autor: Lima Barreto | Quantidade: 6
+Código: 15 | Título: Memórias Póstumas de Brás Cubas | Autor: Machado de Assis | Quantidade: 14
+Código: 16 | Título: Sherlock Holmes: Um Estudo em Vermelho | Autor: Arthur Conan Doyle | Quantidade: 9
+Código: 17 | Título: A Ilíada | Autor: Homero | Quantidade: 5
+Código: 18 | Título: Anne de Green Gables | Autor: Lucy Maud Montgomery | Quantidade: 8
+Código: 19 | Título: O Jardim Secreto | Autor: Frances Hodgson Burnett | Quantidade: 7
+Código: 20 | Título: Dom Casmurro | Autor: Machado de Assis | Quantidade: 10
+Código: 21 | Título: Drácula | Autor: Bram Stoker | Quantidade: 6
+Código: 22 | Título: Frankenstein | Autor: Mary Shelley | Quantidade: 7
+Código: 23 | Título: Coraline | Autor: Neil Gaiman | Quantidade: 9
+Código: 24 | Título: Jogos Vorazes | Autor: Suzanne Collins | Quantidade: 12
+Código: 25 | Título: 1984 | Autor: George Orwell | Quantidade: 10
+Código: 26 | Título: O Pequeno Príncipe | Autor: Antoine de Saint-Exupéry | Quantidade: 20
+Código: 27 | Título: Harry Potter e a Pedra Filosofal | Autor: J.K. Rowling | Quantidade: 18
+Código: 28 | Título: O Hobbit | Autor: J.R.R. Tolkien | Quantidade: 9
+Código: 29 | Título: A Revolução dos Bichos | Autor: George Orwell | Quantidade: 11
+Código: 30 | Título: Cem Anos de Solidão | Autor: Gabriel García Márquez | Quantidade: 5

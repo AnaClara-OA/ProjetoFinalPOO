@@ -1,0 +1,413 @@
+<html>
+<head>
+<title>CadastroMateriais.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+.s4 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+CadastroMateriais.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">br</span><span class="s2">.</span><span class="s1">inatel</span><span class="s2">.</span><span class="s1">cdg</span><span class="s2">.</span><span class="s1">Principal</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">br</span><span class="s2">.</span><span class="s1">inatel</span><span class="s2">.</span><span class="s1">cdg</span><span class="s2">.</span><span class="s1">Estoque</span><span class="s2">.</span><span class="s1">Estoque</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">br</span><span class="s2">.</span><span class="s1">inatel</span><span class="s2">.</span><span class="s1">cdg</span><span class="s2">.</span><span class="s1">Livros</span><span class="s2">.</span><span class="s1">Categoria</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">br</span><span class="s2">.</span><span class="s1">inatel</span><span class="s2">.</span><span class="s1">cdg</span><span class="s2">.</span><span class="s1">Livros</span><span class="s2">.</span><span class="s1">Livro</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">br</span><span class="s2">.</span><span class="s1">inatel</span><span class="s2">.</span><span class="s1">cdg</span><span class="s2">.</span><span class="s1">Livros</span><span class="s2">.</span><span class="s1">Artigo</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">CadastroMateriais </span><span class="s2">{</span>
+
+    <span class="s0">public static void </span><span class="s1">carregarLivros</span><span class="s2">(</span><span class="s1">Estoque estoque</span><span class="s2">) {</span>
+
+        <span class="s1">Categoria fantasia </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Categoria</span><span class="s2">(</span><span class="s3">&quot;Fantasia&quot;</span><span class="s2">);</span>
+        <span class="s1">Categoria romance </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Categoria</span><span class="s2">(</span><span class="s3">&quot;Romance&quot;</span><span class="s2">);</span>
+        <span class="s1">Categoria drama </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Categoria</span><span class="s2">(</span><span class="s3">&quot;Drama&quot;</span><span class="s2">);</span>
+        <span class="s1">Categoria classico </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Categoria</span><span class="s2">(</span><span class="s3">&quot;Classico&quot;</span><span class="s2">);</span>
+        <span class="s1">Categoria misterio </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Categoria</span><span class="s2">(</span><span class="s3">&quot;Misterio&quot;</span><span class="s2">);</span>
+        <span class="s1">Categoria terror </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Categoria</span><span class="s2">(</span><span class="s3">&quot;Terror&quot;</span><span class="s2">);</span>
+        <span class="s1">Categoria ficcao </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Categoria</span><span class="s2">(</span><span class="s3">&quot;Ficcao&quot;</span><span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">1</span><span class="s2">,</span>
+                        <span class="s3">&quot;Percy Jackson e o Ladrão de Raios&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Rick Riordan&quot;</span><span class="s2">,</span>
+                        <span class="s1">fantasia</span><span class="s2">,</span>
+                        <span class="s4">400</span><span class="s2">,</span>
+                        <span class="s4">10</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">2</span><span class="s2">,</span>
+                        <span class="s3">&quot;O Fantasma da Ópera&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Gaston Leroux&quot;</span><span class="s2">,</span>
+                        <span class="s1">romance</span><span class="s2">,</span>
+                        <span class="s4">320</span><span class="s2">,</span>
+                        <span class="s4">7</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">3</span><span class="s2">,</span>
+                        <span class="s3">&quot;Romeu e Julieta&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;William Shakespeare&quot;</span><span class="s2">,</span>
+                        <span class="s1">romance</span><span class="s2">,</span>
+                        <span class="s4">250</span><span class="s2">,</span>
+                        <span class="s4">12</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">4</span><span class="s2">,</span>
+                        <span class="s3">&quot;As Crônicas de Nárnia&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;C.S. Lewis&quot;</span><span class="s2">,</span>
+                        <span class="s1">fantasia</span><span class="s2">,</span>
+                        <span class="s4">752</span><span class="s2">,</span>
+                        <span class="s4">8</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">5</span><span class="s2">,</span>
+                        <span class="s3">&quot;O Senhor dos Anéis&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;J.R.R. Tolkien&quot;</span><span class="s2">,</span>
+                        <span class="s1">fantasia</span><span class="s2">,</span>
+                        <span class="s4">1216</span><span class="s2">,</span>
+                        <span class="s4">5</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">6</span><span class="s2">,</span>
+                        <span class="s3">&quot;É Assim que Acaba&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Colleen Hoover&quot;</span><span class="s2">,</span>
+                        <span class="s1">romance</span><span class="s2">,</span>
+                        <span class="s4">368</span><span class="s2">,</span>
+                        <span class="s4">15</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">7</span><span class="s2">,</span>
+                        <span class="s3">&quot;Orgulho e Preconceito&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Jane Austen&quot;</span><span class="s2">,</span>
+                        <span class="s1">romance</span><span class="s2">,</span>
+                        <span class="s4">424</span><span class="s2">,</span>
+                        <span class="s4">9</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">8</span><span class="s2">,</span>
+                        <span class="s3">&quot;Hamlet&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;William Shakespeare&quot;</span><span class="s2">,</span>
+                        <span class="s1">drama</span><span class="s2">,</span>
+                        <span class="s4">336</span><span class="s2">,</span>
+                        <span class="s4">6</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">9</span><span class="s2">,</span>
+                        <span class="s3">&quot;Sonho de Uma Noite de Verão&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;William Shakespeare&quot;</span><span class="s2">,</span>
+                        <span class="s1">drama</span><span class="s2">,</span>
+                        <span class="s4">208</span><span class="s2">,</span>
+                        <span class="s4">8</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">10</span><span class="s2">,</span>
+                        <span class="s3">&quot;A Odisseia&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Homero&quot;</span><span class="s2">,</span>
+                        <span class="s1">classico</span><span class="s2">,</span>
+                        <span class="s4">500</span><span class="s2">,</span>
+                        <span class="s4">4</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">11</span><span class="s2">,</span>
+                        <span class="s3">&quot;Assassinato no Expresso do Oriente&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Agatha Christie&quot;</span><span class="s2">,</span>
+                        <span class="s1">misterio</span><span class="s2">,</span>
+                        <span class="s4">288</span><span class="s2">,</span>
+                        <span class="s4">11</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">12</span><span class="s2">,</span>
+                        <span class="s3">&quot;Noites Brancas&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Fiódor Dostoiévski&quot;</span><span class="s2">,</span>
+                        <span class="s1">romance</span><span class="s2">,</span>
+                        <span class="s4">160</span><span class="s2">,</span>
+                        <span class="s4">10</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">13</span><span class="s2">,</span>
+                        <span class="s3">&quot;A Menina que Roubava Livros&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Markus Zusak&quot;</span><span class="s2">,</span>
+                        <span class="s1">drama</span><span class="s2">,</span>
+                        <span class="s4">480</span><span class="s2">,</span>
+                        <span class="s4">13</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">14</span><span class="s2">,</span>
+                        <span class="s3">&quot;Triste Fim de Policarpo Quaresma&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Lima Barreto&quot;</span><span class="s2">,</span>
+                        <span class="s1">classico</span><span class="s2">,</span>
+                        <span class="s4">304</span><span class="s2">,</span>
+                        <span class="s4">6</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">15</span><span class="s2">,</span>
+                        <span class="s3">&quot;Memórias Póstumas de Brás Cubas&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Machado de Assis&quot;</span><span class="s2">,</span>
+                        <span class="s1">classico</span><span class="s2">,</span>
+                        <span class="s4">256</span><span class="s2">,</span>
+                        <span class="s4">14</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">16</span><span class="s2">,</span>
+                        <span class="s3">&quot;Sherlock Holmes: Um Estudo em Vermelho&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Arthur Conan Doyle&quot;</span><span class="s2">,</span>
+                        <span class="s1">misterio</span><span class="s2">,</span>
+                        <span class="s4">224</span><span class="s2">,</span>
+                        <span class="s4">9</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">17</span><span class="s2">,</span>
+                        <span class="s3">&quot;A Ilíada&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Homero&quot;</span><span class="s2">,</span>
+                        <span class="s1">classico</span><span class="s2">,</span>
+                        <span class="s4">560</span><span class="s2">,</span>
+                        <span class="s4">5</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">18</span><span class="s2">,</span>
+                        <span class="s3">&quot;Anne de Green Gables&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Lucy Maud Montgomery&quot;</span><span class="s2">,</span>
+                        <span class="s1">romance</span><span class="s2">,</span>
+                        <span class="s4">320</span><span class="s2">,</span>
+                        <span class="s4">8</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">19</span><span class="s2">,</span>
+                        <span class="s3">&quot;O Jardim Secreto&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Frances Hodgson Burnett&quot;</span><span class="s2">,</span>
+                        <span class="s1">drama</span><span class="s2">,</span>
+                        <span class="s4">288</span><span class="s2">,</span>
+                        <span class="s4">7</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">20</span><span class="s2">,</span>
+                        <span class="s3">&quot;Dom Casmurro&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Machado de Assis&quot;</span><span class="s2">,</span>
+                        <span class="s1">classico</span><span class="s2">,</span>
+                        <span class="s4">256</span><span class="s2">,</span>
+                        <span class="s4">10</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">21</span><span class="s2">,</span>
+                        <span class="s3">&quot;Drácula&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Bram Stoker&quot;</span><span class="s2">,</span>
+                        <span class="s1">terror</span><span class="s2">,</span>
+                        <span class="s4">418</span><span class="s2">,</span>
+                        <span class="s4">6</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">22</span><span class="s2">,</span>
+                        <span class="s3">&quot;Frankenstein&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Mary Shelley&quot;</span><span class="s2">,</span>
+                        <span class="s1">terror</span><span class="s2">,</span>
+                        <span class="s4">280</span><span class="s2">,</span>
+                        <span class="s4">7</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">23</span><span class="s2">,</span>
+                        <span class="s3">&quot;Coraline&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Neil Gaiman&quot;</span><span class="s2">,</span>
+                        <span class="s1">fantasia</span><span class="s2">,</span>
+                        <span class="s4">208</span><span class="s2">,</span>
+                        <span class="s4">9</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">24</span><span class="s2">,</span>
+                        <span class="s3">&quot;Jogos Vorazes&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Suzanne Collins&quot;</span><span class="s2">,</span>
+                        <span class="s1">ficcao</span><span class="s2">,</span>
+                        <span class="s4">400</span><span class="s2">,</span>
+                        <span class="s4">12</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">25</span><span class="s2">,</span>
+                        <span class="s3">&quot;1984&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;George Orwell&quot;</span><span class="s2">,</span>
+                        <span class="s1">ficcao</span><span class="s2">,</span>
+                        <span class="s4">416</span><span class="s2">,</span>
+                        <span class="s4">10</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">26</span><span class="s2">,</span>
+                        <span class="s3">&quot;O Pequeno Príncipe&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Antoine de Saint-Exupéry&quot;</span><span class="s2">,</span>
+                        <span class="s1">classico</span><span class="s2">,</span>
+                        <span class="s4">128</span><span class="s2">,</span>
+                        <span class="s4">20</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">27</span><span class="s2">,</span>
+                        <span class="s3">&quot;Harry Potter e a Pedra Filosofal&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;J.K. Rowling&quot;</span><span class="s2">,</span>
+                        <span class="s1">fantasia</span><span class="s2">,</span>
+                        <span class="s4">264</span><span class="s2">,</span>
+                        <span class="s4">18</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">28</span><span class="s2">,</span>
+                        <span class="s3">&quot;O Hobbit&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;J.R.R. Tolkien&quot;</span><span class="s2">,</span>
+                        <span class="s1">fantasia</span><span class="s2">,</span>
+                        <span class="s4">336</span><span class="s2">,</span>
+                        <span class="s4">9</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">29</span><span class="s2">,</span>
+                        <span class="s3">&quot;A Revolução dos Bichos&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;George Orwell&quot;</span><span class="s2">,</span>
+                        <span class="s1">ficcao</span><span class="s2">,</span>
+                        <span class="s4">152</span><span class="s2">,</span>
+                        <span class="s4">11</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarLivro</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Livro</span><span class="s2">(</span>
+                        <span class="s4">30</span><span class="s2">,</span>
+                        <span class="s3">&quot;Cem Anos de Solidão&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Gabriel García Márquez&quot;</span><span class="s2">,</span>
+                        <span class="s1">drama</span><span class="s2">,</span>
+                        <span class="s4">448</span><span class="s2">,</span>
+                        <span class="s4">5</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public static void </span><span class="s1">carregarArtigos</span><span class="s2">(</span><span class="s1">Estoque estoque</span><span class="s2">) {</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarArtigo</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Artigo</span><span class="s2">(</span>
+                        <span class="s4">101</span><span class="s2">,</span>
+                        <span class="s3">&quot;Introdução à Programação Orientada a Objetos&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Christopher Lima&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Revista de Computação&quot;</span><span class="s2">,</span>
+                        <span class="s4">12</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarArtigo</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Artigo</span><span class="s2">(</span>
+                        <span class="s4">102</span><span class="s2">,</span>
+                        <span class="s3">&quot;Inteligência Artificial na Educação&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Ana Souza&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Revista Tecnologia Hoje&quot;</span><span class="s2">,</span>
+                        <span class="s4">8</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarArtigo</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Artigo</span><span class="s2">(</span>
+                        <span class="s4">103</span><span class="s2">,</span>
+                        <span class="s3">&quot;Desenvolvimento Mobile com Flutter&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Carlos Mendes&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Revista Mobile Brasil&quot;</span><span class="s2">,</span>
+                        <span class="s4">15</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">estoque</span><span class="s2">.</span><span class="s1">cadastrarArtigo</span><span class="s2">(</span>
+                <span class="s0">new </span><span class="s1">Artigo</span><span class="s2">(</span>
+                        <span class="s4">104</span><span class="s2">,</span>
+                        <span class="s3">&quot;Banco de Dados Relacionais&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Juliana Costa&quot;</span><span class="s2">,</span>
+                        <span class="s3">&quot;Revista Sistemas de Informação&quot;</span><span class="s2">,</span>
+                        <span class="s4">10</span>
+                <span class="s2">)</span>
+        <span class="s2">);</span>
+    <span class="s2">}</span>
+<span class="s2">}</span></pre>
+</body>
+</html>
